@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat;
+}
+
+nav {
+    background: #0082e6;
+    height: 50px;
+    width: 100%;
+}
+
+nav ul {
+    float: left;
+    margin-left: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+    font-size: x-large;
+}
+
+nav ul li a {
+    color: beige;
+}
+
+a:hover{
+    background: #1b9bff;
+}
+
+a:checked{
+    background: #1b9bff;
+}
+
+// .active
+// {
+//   background-color:green;
+// }
+

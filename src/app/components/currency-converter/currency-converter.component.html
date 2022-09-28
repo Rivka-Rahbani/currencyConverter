@@ -1,0 +1,19 @@
+<div class="allPageHtml">
+  <h1>Currency Converter</h1>
+  <!-- <input type="number" id="fname" name="fname"> -->
+  <input type="number" min="0" [(ngModel)]="userSum">
+  From:
+  <select [(ngModel)]="fromRegion">
+    <option hidden>Select</option>
+    <option *ngFor="let region of regions">{{region}}</option>
+  </select>
+  To:
+  <select [(ngModel)]="toRegion">
+    <option hidden>Select</option>
+    <option *ngFor="let region of regions">{{region}}</option>
+  </select>
+  <button (click)="convert()">convert</button>
+  <br>
+  <br>
+  <div *ngIf="isResult">{{userSum}} {{fromRegion}} = {{result}} {{toRegion}}</div>
+</div>
